@@ -1,0 +1,30 @@
+/* Index.css */
+.title {
+  font-size: 3rem;
+  font-family: 'ABeeZee', sans-serif;
+  color: #4c4c4d;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  margin-top: 2rem;
+}
+
+.btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 160px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.main-section{
+  padding-top: 2%;
+}

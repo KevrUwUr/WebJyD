@@ -1,0 +1,140 @@
+.wrapper {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 265px; /* Ancho inicial */
+  min-width: 80px;
+  transition: all ease-in-out 0.3s; /* Transición suave de la anchura */
+  overflow: hidden;
+  position: sticky;
+  
+}
+
+.sidebar.show {
+  width: 80px; /* Ancho cuando se comprime */
+}
+
+.logo {
+  transition: all 0.3s;
+}
+
+.logo.expanded {
+  width: 70px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar:hover .logo {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  width: 265px; /* Ancho al hacer hover */
+  min-width: 265px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover + div {
+  width: calc(100% - 295px);
+}
+
+.sidebar:hover::before {
+  width: 265px; /* Ancho al hacer hover */
+  max-width: 265px;
+}
+
+.sidebar:hover::after {
+  width: 265px; /* Ancho al hacer hover */
+  max-width: 265px;
+}
+
+.sidebar-wrapper {
+  width: 80px; /* Ancho inicial */
+  transition: all ease-in-out 0.3s; /* Transición suave de la anchura */
+}
+
+.sidebar-wrapper::before {
+  width: 80px; /* Ancho inicial */
+  transition: all ease-in-out 0.3s; /* Transición suave de la anchura */
+}
+
+.sidebar-wrapper::after {
+  width: 80px; /* Ancho inicial */
+  transition: all ease-in-out 0.3s; /* Transición suave de la anchura */
+}
+
+.sidebar-wrapper:hover {
+  width: 256px; /* Ancho inicial */
+  transition: all ease-in-out 0.3s; /* Transición suave de la anchura */
+}
+
+.sidebar-wrapper:hover::before {
+  max-width: 265px;
+}
+
+.sidebar-wrapper:hover::after {
+  max-width: 265px;
+}
+
+.sidebar p {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.nav {
+  padding-left: 0; /* Eliminar el relleno izquierdo predeterminado */
+}
+
+.nav li {
+  width: 100%; /* Ancho completo para ocupar todo el espacio disponible */
+}
+
+.nav li a {
+  display: block; /* Convertir en bloque para ocupar todo el ancho */
+  padding: 10px; /* Espaciado interno */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  color: #fff; /* Color del texto */
+  opacity: 0; /* Inicialmente ocultar los elementos */
+  transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+}
+
+.nav li a p {
+  padding-left: 10px;
+}
+
+.sidebar:hover .nav li a {
+  opacity: 1; /* Mostrar los elementos al hacer hover en la barra lateral */
+}
+
+.nav li a i {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.toggle-button {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0d10b8;
+}
+
+.toggle-button i {
+  font-size: 20px;
+}

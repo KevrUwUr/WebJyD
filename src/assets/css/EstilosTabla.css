@@ -1,0 +1,20 @@
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para la tabla */
+.custom-table {
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* Estilo para el encabezado de la tabla */
+.custom-table thead th {
+  font-size: 30px;
+  font-weight: bold; /* Hace que el texto del encabezado sea negrita */
+  color: #fff; /* Cambia el color del texto del encabezado a blanco */
+}
